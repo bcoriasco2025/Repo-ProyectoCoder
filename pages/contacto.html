@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../img/logo/Logo Beauty.jpeg" alt="Imagen del logo" id="logo">
+        </a>  
+        <h1>Beauty makeup</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="./proveedores.html">Proveedores</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Dejanos tu consulta</h2>
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="telefono">Telefono de contacto</label>
+                <input type="tel" name="telefono" id="telefono">
+                <label for="consulta">Escribinos tus consultas</label>
+                <textarea name="consulta" id="consulta">Hola..</textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/">
+                    <img src="../img/icons/instagram.png" alt="Instagram" class="redes-sociales">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/">
+                    <img src="../img/icons/facebook.png" alt="Facebook" class="redes-sociales">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/">
+                    <img src="../img/icons/twitter.png" alt="X" class="redes-sociales">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

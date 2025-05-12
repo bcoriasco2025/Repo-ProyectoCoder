@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #F1BA88;
+    display: grid;
+    grid-template-areas: "logo titulo titulo"
+    "menu menu menu";
+    align-items: center;
+}
+
+.header__contenedor_logo {
+    grid-area: logo;
+    padding: 0.2em;
+}
+
+.header__contenedor_logo__imagen {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.header__titulo {
+    grid-area: titulo;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.header__navegacion {
+    grid-area: menu;
+}
+
+.header__navegacion__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: beige;
+}
+
+.header__navegacion__lista a {
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 0.7em;
+    color: black;
+    padding: 0.4em;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__home__subtit {
+    padding: 0.9em;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.3em;
+}
+
+.main__home__parrafo {
+    padding: 1.5em;
+    font-family: "Noto Sans", sans-serif;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.main__home__video {
+    padding: 2em;
+    width: 80vw;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #F1BA88;
+}
+
+.footer__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer__lista__imagen {
+    width: 1.3em;
+    margin: 0.5em;
+}
+
+/* Pagina Productos - Mobile*/
+
+.main__productos { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__productos__titulo {
+    padding: 0.9em;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.3em;
+}
+
+.main__productos__subtitulo {
+    padding: 0.9em;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-size: 1em;
+}
+
+.main__productos__imagen {
+    padding-left: 4em;
+}
+
+.main__productos__parrafo { 
+    padding: 1.5em;
+    font-family: "Noto Sans", sans-serif;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+/* Media query para tabletas */
+@media (min-width: 600px) {
+    .header__titulo {
+        font-size: 2em;
+    }
+
+    .header__contenedor_logo__imagen {
+        width: 15vw;
+    }
+
+    .header__navegacion__lista a {
+        font-size: 1.2em;
+        padding: 0.6em;
+    }
+
+    .main__productos { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .main__productos__articulos {
+        width: 40vw;
+        height: 80h;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__productos__imagen {
+        padding-left: 0;
+        max-width: 20vw;
+        max-height: 20vh;
+    }
+
+    .main__productos__titulo { 
+        text-align: center;
+        grid-column: 1 / 3;
+    }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+    .header__contenedor_logo__imagen {
+        width: 10vw;
+        padding: 0.5em;
+    } 
+
+    .header__titulo {
+        font-size: 2.2em;
+        margin-left: 2.7em;
+    }
+
+    .header__navegacion__lista {
+        padding: 0.4em;
+    }
+
+    .header__navegacion__lista a {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    .main__home {
+        display: grid;
+        grid-template-areas: 
+        "video subtitulo"
+        "video parrafo";
+    }
+
+    .main__home__subtit {
+        grid-area: subtitulo;
+        margin-top: 1.5em;
+        padding: 1.2em;
+        font-size: 1.2em;
+    }
+
+    .main__home__parrafo {
+        grid-area: parrafo;
+        margin-bottom: 6em;
+        font-size: 1em;
+        margin-right: 2em;
+    }
+
+    .main__home__video {
+        grid-area: video;
+        width: 600px;
+        height: 355px;
+    }
+
+    .footer__lista__imagen {
+        width: 1.5em;
+        margin: 0.9em;
+    }
+
+    /* Pagina Productos para Escritorio */
+
+    .main__productos__titulo { 
+        font-size: 1.2em;
+        width: auto;
+    }
+
+    .main__productos__imagen { 
+        padding-left: 1em;
+    }
+}
+
+
+/* CSS Original a partir de acá  */
+
+/* 
+
+#logo {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px;
+} */
+
+/* h1 {
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 20px;
+} */
+
+/* li {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-bottom: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav a {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 1.2em;
+    color: black;
+}
+
+h2 {
+    color:black;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h3 {
+    font-family: "Noto Sans", sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.imagen-productos {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.imagenes-proveedores {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.imagen-nosotros {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#imagen-sombra {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+p {
+    font-family: "Noto Sans", sans-serif;
+    color: rgb(50, 54, 47);
+    font-size: 0.9em;
+    margin: 20px 20px 45px;
+}
+
+.video-youtube {
+    width: 600px;
+    height: 355px;
+}
+
+.redes-sociales {
+    width: 1.6em;
+    margin-top: 10px;
+} */
