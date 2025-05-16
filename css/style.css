@@ -82,7 +82,8 @@ li:hover {
 }
 
 .main__home__parrafo {
-    padding: 1.5em;
+    padding: 3em;
+    margin-bottom: 6em;
     font-family: "Noto Sans", sans-serif;
     text-align: justify;
     font-size: 0.9em;
@@ -246,6 +247,10 @@ li:hover {
 
     .main__productos__imagen { 
         padding-left: 1em;
+    }
+
+    .main__productos__articulos { 
+        margin: 2em;
     }
 }
 
