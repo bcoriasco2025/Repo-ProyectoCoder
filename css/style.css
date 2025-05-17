@@ -29,13 +29,14 @@ body {
 .header__contenedor_logo__imagen {
     width: 30vw;
     border-radius: 50%;
+    padding: 0.5em;
 }
 
 .header__titulo {
     grid-area: titulo;
     font-family: "Noto Sans", sans-serif;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 .header__navegacion {
@@ -43,6 +44,8 @@ body {
 }
 
 .header__navegacion__lista {
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -56,7 +59,7 @@ body {
     font-weight: 600;
     font-style: normal;
     font-variation-settings:"wdth" 100;
-    font-size: 0.5em;
+    font-size: 0.8em;
     color: black;
     padding: 0.4em;
 }
@@ -79,7 +82,7 @@ li:hover {
     padding: 0.5em;
     margin-top: 1em;
     font-family: "Noto Sans", sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .main__home__parrafo {
@@ -140,19 +143,87 @@ li:hover {
     font-family: "Noto Sans", sans-serif;
     text-transform: uppercase;
     text-decoration-line: underline;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
-/* .main__productos__imagen {
-    padding-left: 4em;
-} */
+.main__productos__imagen {
+    padding-left: 0;
+    max-width: 80vw;
+    max-height: 80vh;
+}
 
-.main__productos__parrafo { 
-    padding: 1.5em;
+/* Pagina Proveedores - Mobile*/
+
+.main__proveedores { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__proveedores__titulo {
+    padding: 0.9em;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+}
+
+.main__proveedores__articulos { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__proveedores__articulos__subtito { 
+    padding: 0.9em;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-size: 1.5em;
+}
+
+.main__proveedores__articulos__imagen {
+    padding-left: 0;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.main__proveedores__articulos__parrafo {
+    padding: 3em;
+    margin-bottom: 1em;
     font-family: "Noto Sans", sans-serif;
     text-align: justify;
     font-size: 0.9em;
 }
+
+/* Pagina Nosotros - Mobile*/
+
+.main__nosotros__contenido { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__nosotros__titulo {
+    padding: 0.9em;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5em;
+}
+
+.main__nosotros__imagen { 
+    padding-left: 0;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.main__nosotros__parrafo { 
+    padding: 3em;
+    margin-bottom: 1em;
+    font-family: "Noto Sans", sans-serif;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+/* Pagina Nosotros - Mobile*/
 
 /* Media query para tabletas */
 @media (min-width: 600px) {
@@ -196,6 +267,7 @@ li:hover {
 }
 
 /* Media query para computadoras de escritorio */
+/* Pagina home */
 @media (min-width: 1024px) {
     .header__contenedor_logo__imagen {
         width: 10vw;
@@ -264,94 +336,4 @@ li:hover {
     }
 }
 
-
-/* CSS Original a partir de acá  */
-
-/* 
-
-#logo {
-    width: 150px;
-    border-radius: 50%;
-    margin: 20px;
-} */
-
-/* h1 {
-    font-family: "Noto Sans", sans-serif;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-left: 20px;
-} */
-
-/* li {
-    list-style: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-top: 10px;
-    padding-bottom: 7px;
-}
-
-a {
-    text-decoration: none;
-}
-
-header nav a {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:"wdth" 100;
-    font-size: 1.2em;
-    color: black;
-}
-
-h2 {
-    color:black;
-    font-family: "Noto Sans", sans-serif;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-h3 {
-    font-family: "Noto Sans", sans-serif;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.imagen-productos {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.imagenes-proveedores {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.imagen-nosotros {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-#imagen-sombra {
-    width: 200px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-p {
-    font-family: "Noto Sans", sans-serif;
-    color: rgb(50, 54, 47);
-    font-size: 0.9em;
-    margin: 20px 20px 45px;
-}
-
-.video-youtube {
-    width: 600px;
-    height: 355px;
-}
-
-.redes-sociales {
-    width: 1.6em;
-    margin-top: 10px;
-} */
+/* Pagina Proveedores para Escritorio */
