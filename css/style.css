@@ -230,7 +230,9 @@ li:hover {
     font-size: 0.9em;
 }
 
-/* Pagina Nosotros - Mobile*/
+.width-carrusel {
+    width: 100%;
+}
 
 /* Media query para tabletas */
 @media (min-width: 600px) {
@@ -286,6 +288,7 @@ li:hover {
         text-align: center;
         grid-column: 1 / 3;
     }
+
 }
 
 /* Media query para computadoras de escritorio */
@@ -351,27 +354,21 @@ li:hover {
 
     .main__productos__imagen { 
         padding-left: 1em;
-    }
-
-    .main__productos__articulos { 
-        width: 30vw;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        max-width: 40vw;
+        max-height: 40vh; 
     }
 
     .main__productos__parrafo { 
         padding: 3em;
-        margin-bottom: 3em;
         font-family: "Noto Sans", sans-serif;
         text-align: justify;
         font-size: 1.2em;
     }
 
-}
+    /* Pagina Proveedores para Escritorio */
 
-/* Pagina Proveedores para Escritorio */
+
+}
 
 
 
