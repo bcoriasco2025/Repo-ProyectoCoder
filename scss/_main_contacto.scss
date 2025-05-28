@@ -1,0 +1,26 @@
+.main__contacto {
+    .main__contacto__titulo {
+        text-align: center;
+        font-family: $font-primary;
+        padding: 0.9em;
+        font-size: 1.5em;
+        color: $color-secondary;
+        background-color: #e4bf9d;
+    }
+    .main__contacto__form { 
+        font-family: $font-primary;
+    }
+    @include medium-screen {
+        .main__contacto__titulo {
+            padding: 1.2em;
+        }
+    }
+    @include large-screen {
+        .main__contacto__titulo {
+            text-align: center;
+            font-family: "Noto Sans", sans-serif;
+            padding: 0.9em;
+            font-size: 1.8em;
+        }
+    }
+}

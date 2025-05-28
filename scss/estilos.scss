@@ -1,0 +1,41 @@
+@import "variables";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+}
+
+li {
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color: grey;
+    }
+}
+
+.color-primary, .color-primary:visited, .color-primary:active, .color-primary:focus, .color-primary:hover, .color-primary:first-child:active {
+    background-color: $color-primary;
+    border-color: $color-primary; 
+    transition: none !important;
+    color: white; 
+}
+
+.color-primary:visited, .color-primary:active, .color-primary:focus, .color-primary:hover {
+    border: 1px solid;
+    box-shadow: 0 0 0 .2rem rgba(231, 164, 164, 0.945);
+}
+
+@import "header";
+@import "main_home";
+@import "main_productos";
+@import "main_nosotros";
+@import "main_proveedores";
+@import "main_contacto";
+@import "footer";

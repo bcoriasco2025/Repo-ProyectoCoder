@@ -1,0 +1,40 @@
+.footer {
+    grid-area: footer;
+    background-color: $color-primary;
+    .footer__lista {
+        @extend .flex-row;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 1.5em;
+        .footer__lista__imagen {
+            width: 1.5em;
+        }
+    }
+    .footer__derechos {
+        text-align: center;
+        font-family: $font-primary;
+        font-size: 0.8em;
+    }
+        @include medium-screen {
+        .footer__lista{
+            padding: 1em;
+        }
+        .footer__lista__imagen {
+            width: 2em;
+            margin: 1em;
+        } 
+        .footer__derechos {
+            font-size: 1em;
+            padding: 1em;
+        }
+    }
+    @include large-screen { 
+        .footer__lista {
+            justify-content: center;
+            .footer__lista__imagen {
+                width: 1.8em;
+                margin: 1.8em;
+            }
+        }
+    }
+}

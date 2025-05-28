@@ -1,0 +1,24 @@
+$color-primary: #F1BA88;
+$color-secondary: #36393b;
+$font-primary: "Noto Sans", sans-serif;
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin medium-screen {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin large-screen {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}

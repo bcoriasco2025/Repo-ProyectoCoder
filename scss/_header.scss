@@ -1,0 +1,81 @@
+.header {
+    grid-area: header;
+    background-color: $color-primary;
+    .header__navegacion {
+        background-color: $color-primary;
+        .header__titulo {
+            font-family: $font-primary;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .header__contenedor_logo {
+            display: none;
+            .header__contenedor_logo__imagen {
+                // ver
+                width: 30vw;
+                border-radius: 50%;
+                padding: 0.5em;
+            }
+        }
+        .header__navegacion__lista {
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            list-style: none;
+            font-size: 1.2em;
+            a {
+                text-decoration: none;
+                font-family: $font-primary;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+                font-variation-settings:"wdth" 100;
+                font-size: 0.8em;
+                color: black;
+                padding: 0.4em;
+            }
+        }
+    }
+    @include medium-screen {
+        .header__navegacion {
+            .header__titulo {
+                font-size: 2em;
+            }
+            .header__contenedor_logo {
+                .header__contenedor_logo__imagen {
+                    width: 20vw;
+                    padding: 0.5em;
+                }
+            }
+            .header__navegacion__lista {
+                padding: 0.4em;
+                a {
+                    font-size: 0.8em;
+                    padding: 0.6em;
+                }
+            }
+        }
+    }
+    @include large-screen { 
+        .header__navegacion {
+            .header__titulo {
+                display: none;
+            }
+            .header__contenedor_logo {
+                display: inline;
+                .header__contenedor_logo__imagen {
+                    width: 8vw;
+                    padding: 0.5em;
+                }
+            }
+            .header__navegacion__lista {
+                padding: 0.4em;
+                font-size: 1.1em;
+                a {
+                    font-size: 1em;
+                    padding: 0.8em;
+                }
+            }
+        }
+    }
+}
