@@ -387,7 +387,6 @@ li:hover {
   }
   .main__proveedores .main__proveedores__articulos {
     width: 40vw;
-    height: 80vh;
     align-items: center;
   }
   .main__proveedores .main__proveedores__articulos .main__proveedores__articulos__subtitulo {

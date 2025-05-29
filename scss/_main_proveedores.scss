@@ -68,7 +68,6 @@
         .main__proveedores__articulos { 
             @extend .flex-column;
             width: 40vw;
-            height: 80vh;
             align-items: center;
             .main__proveedores__articulos__subtitulo { 
                 font-size: 1.5em;
