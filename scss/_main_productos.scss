@@ -5,8 +5,9 @@
     .main__productos__titulo {
         padding: 0.9em;
         font-family: $font-primary;
-        font-size: 1.5em solid;
-        color: #36393b;
+        font-size: 1.5em;
+        margin-left: 0.5em;
+        color: $color-secondary;
     }
     .main__productos__articulos {
         @extend .flex-column;
@@ -26,12 +27,13 @@
         }
         .main__productos__imagen { 
             padding-left: 0;
+            margin-bottom: 1em;
             max-width: 70vw;
             max-height: 70vh;
-            margin-bottom: 1em;
         }
         .main__productos__parrafo { 
-            padding: 1em;
+            padding: 3em;
+            margin-bottom: 1em;
             text-align: justify;
             font-family: $font-primary;
             font-size: 1em;
